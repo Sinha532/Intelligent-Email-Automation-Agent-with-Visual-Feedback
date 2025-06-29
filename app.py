@@ -20,7 +20,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'gmail-automation-flask-app-2024-secure-key-a1b2c3d4e5f6'
+
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 socketio = SocketIO(app, cors_allowed_origins="*")
 
@@ -276,7 +276,7 @@ def chat_response(user_message, session_id):
 
 def setup_chrome_driver():
     """Setup Chrome driver with optimized options"""
-    chrome_driver_path = r"C:\Users\lokeshsinha\OneDrive\Desktop\chromedriver-win64\chromedriver.exe"
+    chrome_driver_path = r"path/to/your/chromedriver.exe"
     
     chrome_options = Options()
     chrome_options.add_argument("--start-maximized")
