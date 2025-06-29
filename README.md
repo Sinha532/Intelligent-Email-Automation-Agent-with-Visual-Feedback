@@ -1,3 +1,4 @@
+![Alt Text](https://github.com/Sinha532/Intelligent-Email-Automation-Agent-with-Visual-Feedback/blob/88b00f0463aab409c3a5175445e2e3a6fe16ff0c/static/screenshots/Screenshot%202025-06-30%20022633.png)
 # AI Gmail Automation Agent
 
 ## Overview
