@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Gmail Automation Agent</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="connection-status disconnected" id="connectionStatus">
+        Disconnected
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI Gmail Automation Agent</h1>
+            <p class="subtitle">Chat with your intelligent email assistant</p>
+        </div>
+        
+        <div class="main-layout">
+            <!-- Chat Interface -->
+            <div class="chat-section">
+                <div class="chat-header">
+                    <h2>💬 Chat Interface</h2>
+                    <div class="agent-status" id="agentStatus">Ready</div>
+                </div>
+                
+                <div class="chat-container" id="chatContainer">
+                    <div class="chat-message system">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">
+                            <div class="message-text">
+                                Hi! I'm your AI email automation assistant. I can help you send professional emails automatically with AI-generated content. 
+                                <br><br>
+                                To get started, please tell me your name so I can personalize your emails.
+                            </div>
+                            <div class="message-time">Just now</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-input-container">
+                    <div class="chat-input-wrapper">
+                        <input type="text" id="chatInput" placeholder="Type your message... (e.g., 'Send email to john@company.com about internship')" />
+                        <button id="sendButton" class="send-btn">
+                            <span>Send</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Visual Feedback Section -->
+            <div class="visual-section">
+                <div class="visual-header">
+                    <h2>👁️ Live Visual Feedback</h2>
+                    <div class="automation-status" id="automationStatus">Idle</div>
+                </div>
+                
+                <div class="progress-section" id="progressSection" style="display: none;">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-text" id="progressText">0%</div>
+                    <div class="current-step" id="currentStep">Waiting...</div>
+                </div>
+                
+                <div class="screenshot-container" id="screenshotContainer">
+                    <div class="screenshot-placeholder">
+                        <div class="placeholder-icon">📸</div>
+                        <p>Live screenshots will appear here during automation</p>
+                    </div>
+                </div>
+                
+                <div class="screenshot-info" id="screenshotInfo">
+                    <div class="info-item">
+                        <span class="label">Current URL:</span>
+                        <span class="value" id="currentUrl">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Last Update:</span>
+                        <span class="value" id="lastUpdate">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Email Preview Section -->
+        <div class="email-preview-section" id="emailPreviewSection" style="display: none;">
+            <div class="email-preview-header">
+                <h3>📧 AI-Generated Email Preview</h3>
+            </div>
+            <div class="email-preview-content" id="emailPreviewContent">
+                <!-- Email preview will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
