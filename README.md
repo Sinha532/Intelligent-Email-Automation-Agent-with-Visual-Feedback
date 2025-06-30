@@ -297,15 +297,11 @@ We welcome contributions to improve the Gmail Automation Agent. Please follow th
 - **Template Management**: Create and manage email templates
 - **Advanced Analytics**: Email delivery and engagement tracking
 - **Enhanced Security**: OAuth2 integration for better security
-- **Mobile App**: Native mobile application development
 
-## Licence
-
-This project is developed for educational and demonstration purposes. Please ensure compliance with Gmail's Terms of Service and applicable data protection regulations when using this application.
 
 ## Support
 
-For technical support, bug reports, or feature requests, please create an issue in the project repository or contact the development team.
+For technical support, bug reports, or feature requests, please create an issue in the project repository or contact if you need any at lokeshsinha746@gmail.com 📧
 
 ---
 
